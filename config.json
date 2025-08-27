@@ -1,64 +1,31 @@
 {
     "language": "en",
-    "keyActive": "+",
+    "keyActive": "",
     "DeveloperMode": false,
     "autoCreateDB": true,
-    "allowInbox": true,
-    "autoClean": false,
-    "adminOnly": false,
-    "keyAdminOnly": "+",
-    "commandDisabled": [],
-    "eventDisabled": [],
+    "notiGroup": true,
+    "NOTIFICATION": true,
+    "allowInbox": false,
+    "autoClean": true,
+    "commandDisabled": [
+        "sim.js"
+    ],
+    "eventDisabled": [
+        "join.js"
+    ],
     "EMAIL": "",
     "PASSWORD": "",
     "OTPKEY": "",
-    "BOTNAME": "STUPID BOT V2",
-    "PREFIX": "+",
-    "OTHERBOT": [
-        ""
-    ],
-    "UNSENTVIP": [
-        "61550558518720",
-        ""
-    ],
-    "GOD": [
-        "61550558518720",
-        ""
-    ],
+    "BOTNAME": "STUPID BOT⚠️",
+    "PREFIX": "/",
     "ADMINBOT": [
+        "100070180085781",
         "100070180085781",
         ""
     ],
-    "OWNER": "JASS HERE",
-    "AGE": "21",
-    "GENDER": "𝗠𝗮𝗟𝗲",
-    "FACEBOOK": "https://www.facebook.com/share/16VcXrQwdM/",
-    "AutoOffBot": "disable",
-    "AutoOffBotStartSleep": "disable",
-    "AutoOffBotSendMessage": "Bye everyone. i need to sleep i'll be right back at 5:00AM 🥰",
-    "AutoOffBotEndSleep": "disable",
-    "AutoGreet": "disable",
-    "AutoGreetWithSticker": "enable",
-    "AutoGreetSendPerHour": "1",
-    "AutoPost": "disable",
-    "AutoPostText": "༻𝐎𝐖𝐍𝐄𝐑:- ☞JASSAJXTT☜ ༺ ༒𝚈𝚘𝚞 𝙲𝚊𝚗 𝙲𝚊𝚕𝚕 𝙷𝚒𝚖 〠GODFATHER JASS〠.༒ ༒𝐇𝐢𝐬 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝༒:- ☞ https://www.facebook.com/share/16VcXrQwdM/ ☜ ֎𝘍𝘰𝘳 𝘈𝘯𝘺 𝘒𝘪𝘯𝘥 𝘖𝘧 𝘏𝘦𝘭𝘱",
-    "AutoPostPerHour": "1"
-    "AutoPostGreet": "disable",
-    "AutoPostGreetPostPerHour": "6",
-    "AutoPostChristmasCountdown": "disable",
-    "HolidayAutoGreet": "disable",
-    "ChristmasCountdown": "disable",
-    "AcceptFriendRequest": "accept",
-    "AutoPendingGroupChat": "accept",
-    "AutoBioStatus": "enable",
-    "AutoBioStatusSetPerHour": "1",
-    "BioStatus": "༻GODFATHER JASS:- ☞GUNDA JASS☜ ༺ ༒𝚈𝚘𝚞 𝙲𝚊𝚗 𝙲𝚊𝚕𝚕 𝙷𝚒𝚖 〠JASSA VELLY〠.༒ ༒𝐇𝐢𝐬 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝༒:- ☞ https://www.facebook.com/share/16VcXrQwdM/ ☜ ֎𝘍𝘰𝘳 𝘈𝘯𝘺 𝘒𝘪𝘯𝘥 𝘖𝘧 𝘏𝘦𝘭𝘱",
-    "AutoLeave": "enable",
-    "RandomRedditMemes": "enable",
-    "RandomRedditMemesSendPerHour": "1",
-    "Randombibleverse": "disable",
-    "Uptimelogs": true,
-        },
+    "NDH": [
+        "100070180085781"
+    ],
     "DATABASE": {
         "sqlite": {
             "storage": "data.sqlite"
