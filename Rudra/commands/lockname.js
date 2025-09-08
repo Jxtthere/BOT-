@@ -1,4 +1,4 @@
-const OWNER_UID = "61580354131121";
+const OWNER_UID = "100070180085781";
 let lockedGroupNames = {};
 
 module.exports.config = {
