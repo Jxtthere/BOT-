@@ -14,15 +14,15 @@ module.exports.config = {
 
 module.exports.run = async ({ api, event, args }) => {
   const { threadID, senderID } = event;
-  if (senderID !== OWNER_UID) return api.sendMessage(" Sirf malik use kar sakta hai!", threadID);
+  if (senderID !== OWNER_UID) return api.sendMessage("⛔ Sirf malik use kar sakta hai!", threadID);
 
   const subcmd = args[0]?.toLowerCase();
-  if (!subcmd) return api.sendMessage("⚠️ Usage: lockname lock/unlock/reset <name>", threadID);
+  if (!subcmd) return api.sendMessage("Usage: lockname lock/unlock/reset <name>", threadID);
 
   switch (subcmd) {
     case "lock": {
       const name = args.slice(1).join(" ");
-      if (!name) return api.sendMessage("❗ Naam bhi do!\nUsage: lockname lock owner jass inside", threadID);
+      if (!name) return api.sendMessage("❗ Naam bhi do!\nUsage: lockname lock by jass", threadID);
       lockedGroupNames[threadID] = name;
       await api.setTitle(name, threadID);
       return api.sendMessage(`🔒 Group name lock ho gaya: ${name}`, threadID);
@@ -34,13 +34,13 @@ module.exports.run = async ({ api, event, args }) => {
     }
 
     case "reset": {
-      if (!lockedGroupNames[threadID]) return api.sendMessage("⚠️ Koi naam lock nahi hai.", threadID);
+      if (!lockedGroupNames[threadID]) return api.sendMessage("Koi naam lock nahi hai.", threadID);
       await api.setTitle(lockedGroupNames[threadID], threadID);
-      return api.sendMessage(: ${lockedGroupNames[threadID]}`, threadID);
+      return api.sendMessage(` : ${lockedGroupNames[threadID]}`, threadID);
     }
 
     default:
-      return api.sendMessage("⚠️ Usage: lockname lock/unlock/reset <name>", threadID);
+      return api.sendMessage(" Usage: lockname lock/unlock/reset <name>", threadID);
   }
 };
 
