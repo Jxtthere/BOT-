@@ -36,7 +36,7 @@ module.exports.run = async ({ api, event, args }) => {
     case "reset": {
       if (!lockedGroupNames[threadID]) return api.sendMessage("⚠️ Koi naam lock nahi hai.", threadID);
       await api.setTitle(lockedGroupNames[threadID], threadID);
-      return api.sendMessage(`♻️ Group name wapas reset kiya: ${lockedGroupNames[threadID]}`, threadID);
+      return api.sendMessage(`: ${lockedGroupNames[threadID]}`, threadID);
     }
 
     default:
