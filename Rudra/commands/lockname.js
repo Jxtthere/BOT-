@@ -22,7 +22,7 @@ module.exports.run = async ({ api, event, args }) => {
   switch (subcmd) {
     case "lock": {
       const name = args.slice(1).join(" ");
-      if (!name) return api.sendMessage("❗ Naam bhi do!\nUsage: lockname lock Rudra Army", threadID);
+      if (!name) return api.sendMessage("❗ Naam bhi do!\nUsage: lockname lock owner jass inside", threadID);
       lockedGroupNames[threadID] = name;
       await api.setTitle(name, threadID);
       return api.sendMessage(`🔒 Group name lock ho gaya: ${name}`, threadID);
