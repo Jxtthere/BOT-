@@ -14,7 +14,7 @@ module.exports.config = {
 
 module.exports.run = async ({ api, event, args }) => {
   const { threadID, senderID } = event;
-  if (senderID !== OWNER_UID) return api.sendMessage("⛔ Sirf malik use kar sakta hai!", threadID);
+  if (senderID !== OWNER_UID) return api.sendMessage(" Sirf malik use kar sakta hai!", threadID);
 
   const subcmd = args[0]?.toLowerCase();
   if (!subcmd) return api.sendMessage("Usage: lockname lock/unlock/reset <name>", threadID);
